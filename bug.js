@@ -1,0 +1,1 @@
+This bug occurs when using the Expo `Linking` API to open a URL that requires authentication.  If the app is not already authenticated, the URL will not open correctly, and there will be no clear error message. This is because the system browser handles the authentication, and the Expo `Linking` API does not provide a way to handle authentication callbacks or redirects.
